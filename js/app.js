@@ -7,7 +7,8 @@ const tabelloneEl = document.querySelector('.tabellone');
 
 const start = document.querySelector('.button');
 start.addEventListener('click', function(){
-
+tabelloneEl.innerHTML = ('') 
+start.value = "Restart"  
 for(let i = 0; i < numeroCelle; i++){
     
     const cella = getSquareElement();
