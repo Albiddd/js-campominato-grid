@@ -10,9 +10,9 @@ start.addEventListener('click', function(){
 tabelloneEl.innerHTML = ('') 
 start.value = "Restart"  
 for(let i = 0; i < numeroCelle; i++){
-    
+
     const cella = getSquareElement();
-    
+    cella.innerHTML = i + 1
     tabelloneEl.append(cella);
     
 }
@@ -30,5 +30,6 @@ function getSquareElement(){
 function clickHandler(){
     const square = this;
     square.classList.toggle('clicked')  
+    console.log(square.innerHTML)
     square.removeEventListener('click', clickHandler)
 }
